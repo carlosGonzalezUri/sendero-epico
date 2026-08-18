@@ -1,0 +1,41 @@
+ion-tab-bar {
+  --background: var(--ion-color-dark);
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: max(14px, env(safe-area-inset-bottom));
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 4px 10px;
+  height: 60px;
+}
+
+ion-tab-button {
+  --background: transparent;
+  --background-focused: transparent;
+  --color: rgba(247, 242, 231, 0.5);
+  --color-selected: var(--ion-color-secondary);
+  font-weight: 700;
+  border-radius: 20px;
+
+  ion-icon {
+    font-size: 21px;
+    transition: transform 0.15s ease;
+  }
+
+  ion-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+  }
+
+  &.tab-selected {
+    --background: rgba(var(--ion-color-secondary-rgb), 0.16);
+
+    ion-icon {
+      transform: translateY(-1px) scale(1.08);
+    }
+  }
+}

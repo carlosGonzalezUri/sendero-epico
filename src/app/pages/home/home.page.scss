@@ -1,0 +1,290 @@
+ion-content {
+  --padding-bottom: 90px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  margin: 8px 16px 0;
+  padding: 20px 20px 30px;
+  text-align: center;
+  color: var(--ion-color-primary-contrast);
+  background: linear-gradient(165deg, var(--ion-color-primary), #1e2f27 88%);
+  border-radius: 26px;
+  box-shadow: 0 10px 24px rgba(var(--ion-color-primary-rgb), 0.28);
+
+  .hero-glow {
+    position: absolute;
+    inset: -40% -20% auto -20%;
+    height: 220px;
+    background: radial-gradient(circle, rgba(var(--ion-color-secondary-rgb), 0.35), transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-icon {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    margin: 10px auto 12px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+
+    ion-icon {
+      font-size: 32px;
+    }
+  }
+
+  .hero-kicker {
+    position: relative;
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 4px;
+  }
+
+  h1 {
+    position: relative;
+    margin: 0 0 6px;
+    font-size: 1.55rem;
+    color: #ffffff;
+  }
+
+  .stage-description {
+    position: relative;
+    color: rgba(255, 255, 255, 0.78);
+    margin: 0 0 8px;
+    font-size: 0.88rem;
+  }
+
+  .achievement {
+    position: relative;
+    font-weight: 600;
+    color: var(--ion-color-secondary-tint);
+    margin: 0 0 18px;
+    font-size: 0.85rem;
+  }
+
+  ion-progress-bar {
+    position: relative;
+    margin: 8px 0 18px;
+    height: 8px;
+    border-radius: 5px;
+    --background: rgba(255, 255, 255, 0.18);
+    --progress-background: linear-gradient(90deg, var(--ion-color-secondary), var(--ion-color-secondary-tint));
+  }
+
+  .hero-stats-row {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .hero-stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 4px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    .value {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #ffffff;
+    }
+
+    .label {
+      font-size: 0.66rem;
+      color: rgba(255, 255, 255, 0.7);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    &.highlight {
+      background: rgba(var(--ion-color-secondary-rgb), 0.28);
+      border-color: rgba(var(--ion-color-secondary-rgb), 0.5);
+
+      .value {
+        color: var(--ion-color-secondary-tint);
+      }
+    }
+  }
+}
+
+.next-banner {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: -20px 16px 0;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: var(--ion-item-background);
+  box-shadow: 0 6px 16px rgba(var(--ion-color-dark-rgb), 0.12);
+
+  .next-banner-icon {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--ion-color-primary-rgb), 0.12);
+    color: var(--ion-color-primary);
+
+    ion-icon {
+      font-size: 17px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--ion-text-color);
+
+    strong {
+      color: var(--ion-color-primary);
+    }
+  }
+}
+
+.sync-message {
+  text-align: center;
+  color: var(--ion-color-warning);
+  font-size: 0.8rem;
+  margin: 10px 16px 0;
+}
+
+.trail {
+  position: relative;
+  padding: 24px 12px 48px;
+  max-width: 480px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--sendero-trail-line);
+    transform: translateX(-50%);
+  }
+}
+
+.trail-node {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 76px;
+  margin-bottom: 6px;
+
+  .trail-marker {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ion-color-medium);
+    color: #fff;
+    z-index: 2;
+    font-size: 18px;
+    border: 3px solid var(--ion-background-color);
+  }
+
+  .trail-card {
+    width: calc(50% - 36px);
+    background: linear-gradient(160deg, #fbf9ee, #e9dcb8);
+    border: 1px solid #d5c69c;
+    border-radius: 12px;
+    padding: 8px 10px;
+    box-shadow: 0 2px 5px rgba(107, 66, 38, 0.12);
+  }
+
+  .trail-name {
+    font-weight: 700;
+    margin: 0;
+    font-size: 0.92rem;
+  }
+
+  .trail-km {
+    margin: 2px 0 0;
+    font-size: 0.75rem;
+    color: var(--ion-color-medium);
+  }
+
+  .trail-achievement {
+    margin: 4px 0 0;
+    font-size: 0.75rem;
+    color: var(--ion-color-tertiary);
+  }
+
+  &.left .trail-card {
+    margin-right: auto;
+    text-align: right;
+  }
+
+  &.right .trail-card {
+    margin-left: auto;
+    text-align: left;
+  }
+
+  &.done .trail-marker {
+    background: var(--ion-color-success);
+  }
+
+  &.current .trail-marker {
+    background: var(--ion-color-secondary);
+    color: var(--ion-color-secondary-contrast);
+    box-shadow: 0 0 0 6px rgba(var(--ion-color-secondary-rgb), 0.25);
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+
+  &.current .trail-card {
+    border-color: var(--ion-color-secondary);
+    box-shadow: 0 2px 8px rgba(var(--ion-color-secondary-rgb), 0.25);
+  }
+
+  &.upcoming {
+    opacity: 0.55;
+
+    .trail-marker {
+      background: var(--ion-color-light);
+      color: var(--ion-color-medium);
+    }
+  }
+}
+
+// :host-context() es necesario porque .ion-palette-dark vive en <html>, fuera
+// de este componente — un simple ".ion-palette-dark .trail-card" no matchea
+// nunca porque Angular añade el atributo de encapsulación también a
+// ".ion-palette-dark" (que nunca lo tiene, al estar fuera del componente).
+// Declarado después de .trail-node a propósito: misma especificidad que la
+// regla clara de arriba, así que el orden decide y esta debe ganar en oscuro.
+:host-context(.ion-palette-dark) .trail-card {
+  background: linear-gradient(160deg, #2a2822, #1e1c17);
+  border-color: #463f2c;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}

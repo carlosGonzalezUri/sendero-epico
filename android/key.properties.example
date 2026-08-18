@@ -1,0 +1,13 @@
+# Copia este archivo a "key.properties" (sin ".example") en esta misma carpeta
+# (android/key.properties) y rellena tus valores reales. Ese archivo SÍ está
+# en .gitignore — nunca se sube al repo, ni él ni el propio keystore.
+#
+# storeFile es la ruta al archivo .jks/.keystore que generaste con keytool.
+# Mejor pon una ruta ABSOLUTA (guardar el keystore fuera de la carpeta del
+# proyecto es buena idea, para que nunca se te olvide entre un checkout y
+# otro). Si usas una ruta relativa, se resuelve desde la carpeta "android/".
+
+storeFile=/Users/carlos/sendero-epico-release.jks
+storePassword=TU_CONTRASEÑA_DEL_KEYSTORE
+keyAlias=sendero-epico
+keyPassword=TU_CONTRASEÑA_DE_LA_CLAVE

@@ -1,0 +1,118 @@
+/**
+ * Sendero Épico — paleta "version2": inspirada en la primera película de la
+ * trilogía (La Comunidad del Anillo) — verdes de musgo con niebla, oro
+ * envejecido de Rivendel y el gris pizarra de las montañas, en vez de la
+ * paleta más "senderismo rústico" de la version1 (etiquetada en git como
+ * paleta-version1 por si queremos volver a ella).
+ */
+
+@import "@ionic/angular/css/palettes/dark.class.css";
+
+:root {
+  /** Primario: verde musgo con niebla (colinas de la Comarca al amanecer) **/
+  --ion-color-primary: #3f5d4e;
+  --ion-color-primary-rgb: 63, 93, 78;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #26392f;
+  --ion-color-primary-tint: #547b68;
+
+  /** Secundario: oro envejecido de Rivendel **/
+  --ion-color-secondary: #c08a3d;
+  --ion-color-secondary-rgb: 192, 138, 61;
+  --ion-color-secondary-contrast: #241900;
+  --ion-color-secondary-contrast-rgb: 36, 25, 0;
+  --ion-color-secondary-shade: #92692e;
+  --ion-color-secondary-tint: #cda163;
+
+  /** Terciario: gris pizarra de las Montañas Nubladas **/
+  --ion-color-tertiary: #55677a;
+  --ion-color-tertiary-rgb: 85, 103, 122;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #3c4956;
+  --ion-color-tertiary-tint: #6a8098;
+
+  --ion-color-success: #3f8a63;
+  --ion-color-success-rgb: 63, 138, 99;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #2c6045;
+  --ion-color-success-tint: #4fad7c;
+
+  --ion-color-warning: #d1a24a;
+  --ion-color-warning-rgb: 209, 162, 74;
+  --ion-color-warning-contrast: #241900;
+  --ion-color-warning-contrast-rgb: 36, 25, 0;
+  --ion-color-warning-shade: #b1832d;
+  --ion-color-warning-tint: #dbb773;
+
+  --ion-color-danger: #9c4536;
+  --ion-color-danger-rgb: 156, 69, 54;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #6f3126;
+  --ion-color-danger-tint: #bf5846;
+
+  --ion-color-medium: #7c8892;
+  --ion-color-medium-rgb: 124, 136, 146;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #5f6972;
+  --ion-color-medium-tint: #98a1a9;
+
+  --ion-color-light: #eef1ee;
+  --ion-color-light-rgb: 238, 241, 238;
+  --ion-color-light-contrast: #20262b;
+  --ion-color-light-contrast-rgb: 32, 38, 43;
+  --ion-color-light-shade: #ccd5cc;
+  --ion-color-light-tint: #ffffff;
+
+  --ion-color-dark: #20262b;
+  --ion-color-dark-rgb: 32, 38, 43;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #060708;
+  --ion-color-dark-tint: #364048;
+
+  --ion-background-color: #f2f0e4;
+  --ion-background-color-rgb: 242, 240, 228;
+  --ion-text-color: #20262b;
+  --ion-text-color-rgb: 32, 38, 43;
+
+  --ion-toolbar-background: #ffffff;
+  --ion-item-background: #ffffff;
+  --ion-border-color: #dcdfd6;
+
+  --sendero-trail-line: #b7c0b2;
+}
+
+/*
+ * Modo oscuro manual: la app arranca siempre en claro y el usuario lo activa
+ * desde el interruptor del header (ThemeService añade/quita esta clase en
+ * <html>). Ya no seguimos el prefers-color-scheme del sistema.
+ */
+.ion-palette-dark {
+  --ion-background-color: #14181b;
+  --ion-background-color-rgb: 20, 24, 27;
+  --ion-text-color: #e7eae6;
+  --ion-text-color-rgb: 231, 234, 230;
+  --ion-toolbar-background: #1b2126;
+  --ion-item-background: #1b2126;
+  --ion-border-color: #313a40;
+  --sendero-trail-line: #3a444b;
+
+  /**
+   * El terciario (pizarra) se usa como color de texto/acento en varias
+   * pantallas (logros, cabeceras de sección, icono del selector de tema).
+   * En claro es un gris azulado oscuro que se lee bien sobre fondos claros,
+   * pero sobre fondos oscuros pierde contraste — aquí lo aclaramos a un
+   * gris pizarra más luminoso para mantener la legibilidad.
+   */
+  --ion-color-tertiary: #8fa0b3;
+  --ion-color-tertiary-rgb: 143, 160, 179;
+  --ion-color-tertiary-contrast: #14181b;
+  --ion-color-tertiary-contrast-rgb: 20, 24, 27;
+  --ion-color-tertiary-shade: #6b819a;
+  --ion-color-tertiary-tint: #adbac8;
+}

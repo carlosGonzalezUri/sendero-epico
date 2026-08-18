@@ -1,0 +1,77 @@
+:host {
+  display: contents;
+}
+
+.app-header {
+  ion-toolbar {
+    // Antes era transparente del todo y se fundía por completo con la
+    // textura de fondo; un pelín de opacidad le da al header algo de
+    // presencia propia sin que vuelva a parecer una barra sólida estándar.
+    --background: rgba(var(--ion-color-dark-rgb), 0.045);
+    --border-width: 0;
+    --box-shadow: none;
+    --min-height: 56px;
+    padding: 2px 4px;
+  }
+}
+
+:host-context(.ion-palette-dark) .app-header ion-toolbar {
+  --background: rgba(255, 255, 255, 0.045);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 8px;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: linear-gradient(160deg, var(--ion-color-primary-tint), var(--ion-color-primary-shade));
+  box-shadow: 0 3px 8px rgba(var(--ion-color-primary-rgb), 0.35);
+
+  ion-icon {
+    font-size: 18px;
+    color: var(--ion-color-primary-contrast);
+  }
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.2px;
+  color: var(--ion-text-color);
+}
+
+.settings-button {
+  --background: rgba(var(--ion-color-dark-rgb), 0.06);
+  --background-hover: rgba(var(--ion-color-dark-rgb), 0.1);
+  --border-radius: 50%;
+  --padding-start: 0;
+  --padding-end: 0;
+  width: 38px;
+  height: 38px;
+  margin-right: 6px;
+
+  ion-icon {
+    font-size: 19px;
+    color: var(--ion-color-tertiary);
+  }
+}
+
+:host-context(.ion-palette-dark) .settings-button {
+  --background: rgba(255, 255, 255, 0.08);
+  --background-hover: rgba(255, 255, 255, 0.14);
+
+  ion-icon {
+    color: var(--ion-color-secondary);
+  }
+}

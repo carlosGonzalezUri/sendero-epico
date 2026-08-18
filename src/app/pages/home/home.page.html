@@ -1,0 +1,71 @@
+<app-header [title]="progress?.journey?.title || 'Sendero Épico'" icon="trail-sign-outline"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doSync($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="hero" *ngIf="progress as p">
+    <div class="hero-glow"></div>
+    <div class="hero-icon">
+      <ion-icon [name]="p.currentStage.icon"></ion-icon>
+    </div>
+    <span class="hero-kicker">{{ 'home.currentStage' | translate }}</span>
+    <h1>{{ ('journey.stages.' + p.currentStage.id + '.name') | translate }}</h1>
+    <p class="stage-description">{{ ('journey.stages.' + p.currentStage.id + '.description') | translate }}</p>
+    <p class="achievement">🏅 {{ ('journey.stages.' + p.currentStage.id + '.achievement') | translate }}</p>
+
+    <ion-progress-bar [value]="p.percentComplete / 100"></ion-progress-bar>
+
+    <div class="hero-stats-row">
+      <div class="hero-stat">
+        <span class="value">{{ p.totalKm | number: '1.1-1' }}</span>
+        <span class="label">{{ 'home.kmWalked' | translate }}</span>
+      </div>
+      <div class="hero-stat highlight">
+        <span class="value">{{ p.percentComplete | number: '1.0-0' }}%</span>
+        <span class="label">{{ 'home.completedLabel' | translate }}</span>
+      </div>
+      <div class="hero-stat">
+        <span class="value">{{ p.journey.totalDistanceKm | number: '1.0-0' }}</span>
+        <span class="label">{{ 'home.kmTotal' | translate }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="next-banner" *ngIf="progress as p">
+    <div class="next-banner-icon">
+      <ion-icon [name]="p.completed ? 'checkmark-circle' : 'flag-outline'"></ion-icon>
+    </div>
+    <p *ngIf="!p.completed && p.nextStage">
+      {{ 'home.remainingPrefix' | translate }} <strong>{{ p.kmToNextStage | number: '1.1-1' }} km</strong>
+      {{ 'home.remainingSuffix' | translate }}
+      <strong>{{ ('journey.stages.' + p.nextStage.id + '.name') | translate }}</strong>
+    </p>
+    <p *ngIf="p.completed">{{ 'home.journeyCompleted' | translate: { name: p.journey.title } }}</p>
+  </div>
+  <p *ngIf="syncMessage" class="sync-message">{{ syncMessage | translate }}</p>
+
+  <div class="trail" *ngIf="progress as p">
+    <div
+      class="trail-node"
+      *ngFor="let stage of p.journey.stages; let i = index"
+      [class.left]="i % 2 === 0"
+      [class.right]="i % 2 !== 0"
+      [class.done]="stageStatus(stage) === 'done'"
+      [class.current]="stageStatus(stage) === 'current'"
+      [class.upcoming]="stageStatus(stage) === 'upcoming'"
+    >
+      <div class="trail-marker">
+        <ion-icon [name]="stageStatus(stage) === 'done' ? 'checkmark-circle' : stage.icon"></ion-icon>
+      </div>
+      <div class="trail-card">
+        <p class="trail-name">{{ ('journey.stages.' + stage.id + '.name') | translate }}</p>
+        <p class="trail-km">{{ 'home.kmLabel' | translate: { km: kmDisplay(stage.distanceFromStartKm) } }}</p>
+        <p class="trail-achievement" *ngIf="stageStatus(stage) !== 'upcoming'">
+          🏅 {{ ('journey.stages.' + stage.id + '.achievement') | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</ion-content>

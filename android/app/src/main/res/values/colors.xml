@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Antes este proyecto no tenía colors.xml propio, así que colorPrimary /
+      colorPrimaryDark / colorAccent (referenciados en styles.xml) caían al
+      valor por defecto que trae la librería de Capacitor (índigo/rosa de
+      plantilla) — de ahí que la barra de estado se viera oscura y fuera de
+      marca nada más abrir la app, antes incluso de que cargue el JS. Estos
+      valores replican la paleta clara de src/theme/variables.css.
+    -->
+    <color name="colorPrimary">#3f5d4e</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#c08a3d</color>
+</resources>

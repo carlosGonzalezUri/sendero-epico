@@ -1,0 +1,22 @@
+<ion-header class="app-header">
+  <ion-toolbar>
+    <div class="brand">
+      <div class="brand-mark">
+        <ion-icon [name]="icon"></ion-icon>
+      </div>
+      <span class="brand-name">{{ title }}</span>
+    </div>
+
+    <ion-buttons slot="end">
+      <ion-button
+        class="settings-button"
+        fill="clear"
+        shape="round"
+        routerLink="/settings"
+        [attr.aria-label]="'header.settings' | translate"
+      >
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

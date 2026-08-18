@@ -1,0 +1,96 @@
+import { addIcons } from 'ionicons';
+import {
+  checkmarkCircle,
+  locationOutline,
+  flagOutline,
+  homeOutline,
+  trailSignOutline,
+  leafOutline,
+  boatOutline,
+  waterOutline,
+  cafeOutline,
+  compassOutline,
+  warningOutline,
+  flowerOutline,
+  snowOutline,
+  thunderstormOutline,
+  keyOutline,
+  skullOutline,
+  businessOutline,
+  sadOutline,
+  footstepsOutline,
+  eyeOffOutline,
+  peopleOutline,
+  flameOutline,
+  arrowUpOutline,
+  bugOutline,
+  flashOutline,
+  shirtOutline,
+  bagRemoveOutline,
+  mapOutline,
+  statsChartOutline,
+  calendarOutline,
+  speedometerOutline,
+  trophyOutline,
+  sunnyOutline,
+  moonOutline,
+  settingsOutline,
+  languageOutline,
+  documentTextOutline,
+  closeOutline,
+  checkmarkOutline,
+} from 'ionicons/icons';
+
+/**
+ * Registro único de todos los iconos que usa la app (incluidos los que vienen
+ * del recorrido en core/data/journey.data.ts, referenciados por nombre en
+ * `stage.icon`). Se llama una sola vez desde AppComponent, que siempre se
+ * instancia el primero — así no importa qué pantalla se abra primero, todos
+ * los iconos ya están disponibles.
+ *
+ * Si añades una etapa nueva en journey.data.ts con un icono que no está en
+ * esta lista, añádelo aquí también (si no, el icono saldrá en blanco).
+ */
+export function registerAppIcons(): void {
+  addIcons({
+    'checkmark-circle': checkmarkCircle,
+    'location-outline': locationOutline,
+    'flag-outline': flagOutline,
+    'home-outline': homeOutline,
+    'trail-sign-outline': trailSignOutline,
+    'leaf-outline': leafOutline,
+    'boat-outline': boatOutline,
+    'water-outline': waterOutline,
+    'cafe-outline': cafeOutline,
+    'compass-outline': compassOutline,
+    'warning-outline': warningOutline,
+    'flower-outline': flowerOutline,
+    'snow-outline': snowOutline,
+    'thunderstorm-outline': thunderstormOutline,
+    'key-outline': keyOutline,
+    'skull-outline': skullOutline,
+    'business-outline': businessOutline,
+    'sad-outline': sadOutline,
+    'footsteps-outline': footstepsOutline,
+    'eye-off-outline': eyeOffOutline,
+    'people-outline': peopleOutline,
+    'flame-outline': flameOutline,
+    'arrow-up-outline': arrowUpOutline,
+    'bug-outline': bugOutline,
+    'flash-outline': flashOutline,
+    'shirt-outline': shirtOutline,
+    'bag-remove-outline': bagRemoveOutline,
+    'map-outline': mapOutline,
+    'stats-chart-outline': statsChartOutline,
+    'calendar-outline': calendarOutline,
+    'speedometer-outline': speedometerOutline,
+    'trophy-outline': trophyOutline,
+    'sunny-outline': sunnyOutline,
+    'moon-outline': moonOutline,
+    'settings-outline': settingsOutline,
+    'language-outline': languageOutline,
+    'document-text-outline': documentTextOutline,
+    'close-outline': closeOutline,
+    'checkmark-outline': checkmarkOutline,
+  });
+}
