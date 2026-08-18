@@ -1,0 +1,78 @@
+<app-header title="{{ 'tabs.stats' | translate }}" icon="stats-chart-outline"></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="bento">
+    <div class="tile tile-hero">
+      <ion-icon name="trail-sign-outline"></ion-icon>
+      <p class="hero-value">{{ totalKm | number: '1.1-1' }}<span>km</span></p>
+      <p class="hero-label">{{ 'stats.walkedOf' | translate: { total: kmDisplay(totalDistanceKm) } }}</p>
+      <div class="hero-chip">
+        <ion-icon name="flag-outline"></ion-icon>
+        {{ 'stats.stagesShort' | translate: { done: stagesCompleted, total: stagesTotal } }}
+      </div>
+    </div>
+
+    <div class="tile tile-small">
+      <ion-icon name="flame-outline" color="secondary"></ion-icon>
+      <p class="stat-value">{{ currentStreak }}</p>
+      <p class="stat-label">
+        {{ (currentStreak === 1 ? 'stats.streakDaySingular' : 'stats.streakDayPlural') | translate }}
+      </p>
+    </div>
+
+    <div class="tile tile-small">
+      <ion-icon name="trophy-outline" color="secondary"></ion-icon>
+      <p class="stat-value">{{ longestStreak }}</p>
+      <p class="stat-label">{{ 'stats.bestStreak' | translate }}</p>
+    </div>
+
+    <div class="tile tile-small">
+      <ion-icon name="calendar-outline"></ion-icon>
+      <p class="stat-value">{{ activeDays }}</p>
+      <p class="stat-label">{{ 'stats.activeDays' | translate }}</p>
+    </div>
+
+    <div class="tile tile-small">
+      <ion-icon name="speedometer-outline"></ion-icon>
+      <p class="stat-value">{{ averageKmPerActiveDay | number: '1.1-1' }}</p>
+      <p class="stat-label">{{ 'stats.kmPerActiveDay' | translate }}</p>
+    </div>
+  </div>
+
+  <div class="section" *ngIf="nextStage">
+    <h2><ion-icon name="compass-outline"></ion-icon> {{ 'stats.nextGoal' | translate }}</h2>
+    <ion-card class="next-card">
+      <ion-card-content>
+        <p class="next-name">{{ ('journey.stages.' + nextStage.id + '.name') | translate }}</p>
+        <p class="next-detail">{{ 'stats.kmRemaining' | translate: { km: kmDisplay1(kmToNextStage) } }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="section" *ngIf="recentAchievements.length > 0">
+    <h2>🏅 {{ 'stats.recentAchievements' | translate }}</h2>
+    <ion-card
+      *ngFor="let stage of recentAchievements; let i = index"
+      class="achievement-card"
+      [class.latest]="i === 0"
+    >
+      <ion-card-content>
+        <div class="achievement-badge">
+          <ion-icon [name]="stage.icon"></ion-icon>
+        </div>
+        <div class="achievement-body">
+          <div class="achievement-top">
+            <p class="achievement-stage">{{ ('journey.stages.' + stage.id + '.name') | translate }}</p>
+            <span class="latest-tag" *ngIf="i === 0">{{ 'stats.mostRecent' | translate }}</span>
+          </div>
+          <p class="achievement-text">{{ ('journey.stages.' + stage.id + '.achievement') | translate }}</p>
+          <p class="achievement-km">{{ 'home.kmLabel' | translate: { km: kmDisplay(stage.distanceFromStartKm) } }}</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <p class="empty-state" *ngIf="dailyLog.length === 0">
+    {{ 'stats.emptyState' | translate }}
+  </p>
+</ion-content>

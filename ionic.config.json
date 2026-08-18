@@ -1,0 +1,6 @@
+{
+  "name": "ionic-app",
+  "integrations": {},
+  "type": "angular",
+  "defaultProject": "sendero-epico"
+}

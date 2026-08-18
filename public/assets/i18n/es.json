@@ -1,0 +1,233 @@
+{
+  "tabs": {
+    "journey": "Viaje",
+    "stats": "Estadísticas"
+  },
+  "header": {
+    "settings": "Ajustes"
+  },
+  "home": {
+    "currentStage": "Etapa actual",
+    "kmWalked": "km recorridos",
+    "completedLabel": "completado",
+    "kmTotal": "km totales",
+    "remainingPrefix": "Te quedan",
+    "remainingSuffix": "para llegar a",
+    "journeyCompleted": "¡Has completado {{name}}!",
+    "kmLabel": "Km {{km}}",
+    "syncNeedsPermission": "Necesitamos permiso para leer tus pasos en Health Connect.",
+    "syncNeedsHealthConnect": "Instala la app Health Connect para sincronizar tus pasos."
+  },
+  "stats": {
+    "walkedOf": "recorridos de {{total}} km en total",
+    "stagesShort": "{{done}} / {{total}} etapas",
+    "streakDaySingular": "día seguido",
+    "streakDayPlural": "días seguidos",
+    "bestStreak": "récord de racha",
+    "activeDays": "días activos",
+    "kmPerActiveDay": "km / día activo",
+    "nextGoal": "Próximo objetivo",
+    "kmRemaining": "Te quedan {{km}} km",
+    "recentAchievements": "Últimos logros conseguidos",
+    "mostRecent": "Más reciente",
+    "emptyState": "Aún no hay días registrados. Sincroniza desde la pantalla de Viaje."
+  },
+  "settings": {
+    "title": "Ajustes",
+    "appearance": "Apariencia",
+    "darkMode": "Modo oscuro",
+    "darkModeHint": "Cambia el tema de toda la app",
+    "language": "Idioma",
+    "legal": "Legal",
+    "legalButton": "Términos y condiciones",
+    "version": "Versión"
+  },
+  "legal": {
+    "title": "Términos y condiciones",
+    "lastUpdated": "Última actualización: 18 de agosto de 2026",
+    "termsHeading": "Términos de uso",
+    "termsBody": "Sendero Épico es una aplicación de acompañamiento para tu actividad física: convierte tus pasos diarios (leídos desde Health Connect, con tu permiso) en avance a lo largo de un recorrido ilustrado con etapas e hitos ficticios. Al usar la app aceptas usarla con fines personales y no comerciales, y entiendes que las distancias, etapas y logros mostrados son parte de una experiencia de gamificación y no constituyen asesoramiento médico ni deportivo.\n\nLa app puede ofrecer funciones adicionales de pago (\"premium\") de forma opcional. Cualquier compra dentro de la app se gestiona a través de la tienda de aplicaciones correspondiente (Google Play) y se rige por sus condiciones de facturación y reembolso.\n\nNos reservamos el derecho de actualizar estos términos a medida que la app evolucione. Si sigues usando la app después de un cambio, se entiende que aceptas la versión actualizada.\n\nNo garantizamos que la app esté libre de errores o disponible de forma ininterrumpida, y no nos hacemos responsables de decisiones de salud o entrenamiento basadas únicamente en los datos mostrados en la app.",
+    "privacyHeading": "Política de privacidad",
+    "privacyBody": "Sendero Épico está diseñada para funcionar con la menor cantidad de datos posible. No requiere crear una cuenta ni iniciar sesión.\n\nTu progreso (pasos, km recorridos, racha de días activos) se guarda únicamente en tu dispositivo. La app lee tu recuento de pasos desde Health Connect solo con tu autorización explícita, y esos datos no se envían a nuestros servidores porque, sencillamente, no tenemos servidores que los reciban.\n\nSi en el futuro se añaden funciones que impliquen enviar o almacenar datos fuera de tu dispositivo (por ejemplo, para sincronizar entre dispositivos o gestionar compras premium), actualizaremos esta política para explicar exactamente qué datos se comparten y con qué finalidad, antes de activarlas.\n\nPuedes revocar en cualquier momento el permiso de Health Connect desde los ajustes de tu sistema Android, y puedes borrar todos los datos guardados desinstalando la app.\n\nSi tienes preguntas sobre esta política, puedes contactar con el desarrollador a través de la ficha de la app en Google Play.",
+    "close": "Cerrar"
+  },
+  "journey": {
+    "stages": {
+      "aldea-natal": {
+        "name": "La Aldea Natal",
+        "description": "Un pueblo tranquilo entre colinas verdes, el punto de partida.",
+        "achievement": "Empieza una aventura"
+      },
+      "limite-conocido": {
+        "name": "El Límite Conocido",
+        "description": "El punto más lejano al que había llegado nunca ningún vecino de la aldea.",
+        "achievement": "Un paso más allá de lo conocido"
+      },
+      "huerto": {
+        "name": "El Huerto",
+        "description": "Campos de cultivo justo a las afueras, tentación de paso.",
+        "achievement": "Solo eran un par de zanahorias"
+      },
+      "embarcadero": {
+        "name": "El Embarcadero",
+        "description": "Un cruce de río en barca, la última salida fácil antes de lo desconocido.",
+        "achievement": "¡Corre, viajero!"
+      },
+      "el-puente": {
+        "name": "El Puente",
+        "description": "Cruzar aquí es dejar atrás el hogar de verdad.",
+        "achievement": "Dejando atrás el hogar"
+      },
+      "posada-del-poni": {
+        "name": "La Posada del Poni Cansado",
+        "description": "Una taberna de cruce de caminos, llena de rumores y miradas curiosas.",
+        "achievement": "Un nombre prestado"
+      },
+      "guia-misterioso": {
+        "name": "De Camino con el Guía Misterioso",
+        "description": "Un viajero solitario se ofrece a acompañar al grupo por los caminos peligrosos.",
+        "achievement": "Conociendo al guía"
+      },
+      "cima-ventosa": {
+        "name": "La Cima Ventosa",
+        "description": "Una colina antigua y expuesta, mal sitio para acampar.",
+        "achievement": "La hoja envenenada"
+      },
+      "ciudad-de-los-elfos": {
+        "name": "La Ciudad de los Elfos Antiguos",
+        "description": "Un refugio escondido en un valle, el último respiro antes de las tierras salvajes.",
+        "achievement": "Nace la Hermandad del Viaje"
+      },
+      "cumbres-heladas-1": {
+        "name": "Las Cumbres Heladas",
+        "description": "Una cordillera imponente que hay que cruzar o rodear.",
+        "achievement": "Serán 40 días de marcha"
+      },
+      "paso-de-la-nieve": {
+        "name": "El Paso de la Nieve",
+        "description": "Un puerto de montaña que parece resistirse a dejarles pasar.",
+        "achievement": "El viento arrastra una voz cruel"
+      },
+      "bajada-de-la-montana": {
+        "name": "La Bajada de la Montaña",
+        "description": "El descenso, tan duro como la subida.",
+        "achievement": "Frío invierno"
+      },
+      "entrada-minas-profundas": {
+        "name": "La Entrada a las Minas Profundas",
+        "description": "Una puerta antigua sellada con un acertijo, tallada en la roca.",
+        "achievement": "Solo quien conoce la palabra puede pasar"
+      },
+      "salida-minas-profundas": {
+        "name": "La Salida de las Minas Profundas",
+        "description": "Algo despertó ahí abajo, y no todos salen igual.",
+        "achievement": "La última barrera antes de la salida"
+      },
+      "bosque-dorado": {
+        "name": "El Bosque Dorado",
+        "description": "Un bosque donde el tiempo parece detenerse entre hojas doradas.",
+        "achievement": "Bienvenido, quien ha sentido la sombra"
+      },
+      "rio-de-los-elfos": {
+        "name": "El Río de los Elfos",
+        "description": "Un largo tramo navegando corriente abajo.",
+        "achievement": "Un largo paseo en canoa"
+      },
+      "estatuas-de-los-reyes": {
+        "name": "Las Estatuas de los Reyes Antiguos",
+        "description": "Dos figuras colosales talladas en la roca, vigilando el paso del río.",
+        "achievement": "Los reyes antepasados"
+      },
+      "separacion-de-la-hermandad": {
+        "name": "Donde se Separa la Hermandad",
+        "description": "El grupo ya no puede seguir junto el resto del camino.",
+        "achievement": "Adiós, compañero"
+      },
+      "cumbres-heladas-2": {
+        "name": "Las Cumbres Heladas",
+        "description": "Otra cordillera, esta vez sin nadie más que guíe el camino.",
+        "achievement": "Estamos perdidos"
+      },
+      "descenso-de-la-montana": {
+        "name": "El Descenso de la Montaña",
+        "description": "Algo lleva un tiempo siguiéndoles de cerca.",
+        "achievement": "No estamos solos"
+      },
+      "camino-al-porton-sombrio": {
+        "name": "Camino al Portón Sombrío",
+        "description": "Una criatura extraña se ofrece, a su manera, como guía.",
+        "achievement": "Ahora tenemos un guía"
+      },
+      "paso-de-la-cienaga": {
+        "name": "El Paso de la Ciénaga",
+        "description": "Aguas estancadas donde flotan reflejos que es mejor no mirar.",
+        "achievement": "Nos ha metido en un cenagal"
+      },
+      "porton-sombrio": {
+        "name": "El Portón Sombrío",
+        "description": "La entrada principal a las tierras enemigas, vigilada día y noche.",
+        "achievement": "Hay otro camino, aunque nadie lo recuerde"
+      },
+      "aliado-inesperado": {
+        "name": "Encuentro con un Aliado Inesperado",
+        "description": "Otro grupo de viajeros armados les corta el paso.",
+        "achievement": "Resulta que era su hermano"
+      },
+      "cueva-de-la-cascada": {
+        "name": "La Cueva de la Cascada",
+        "description": "Un escondite secreto detrás de una cortina de agua.",
+        "achievement": "Prohibido bañarse"
+      },
+      "ciudad-en-ruinas": {
+        "name": "La Ciudad Asaltada en Ruinas",
+        "description": "Una ciudad a medio abandonar, bajo asedio constante.",
+        "achievement": "Todos luchan por algo"
+      },
+      "escalera-de-las-minas-verdes": {
+        "name": "La Escalera de las Minas Verdes",
+        "description": "Un atajo tallado en la ladera, empinado y olvidado.",
+        "achievement": "Vamos por la escalera secreta"
+      },
+      "guarida-de-la-arana": {
+        "name": "La Guarida de la Araña",
+        "description": "Un túnel que huele a algo mucho más grande que una telaraña normal.",
+        "achievement": "Hay que entrar en el túnel"
+      },
+      "pelea-con-la-arana": {
+        "name": "Pelea con la Araña",
+        "description": "El momento más oscuro del camino hasta ahora.",
+        "achievement": "¡No vayas donde no puedo seguirte, despierta!"
+      },
+      "huida-de-los-enemigos": {
+        "name": "Huida de los Enemigos",
+        "description": "Capturado y liberado, hace falta pasar desapercibido.",
+        "achievement": "Necesita otro disfraz para continuar"
+      },
+      "camino-a-la-torre-oscura": {
+        "name": "Camino a la Torre Oscura",
+        "description": "Las tierras sombrías, a la vista de la fortaleza enemiga.",
+        "achievement": "Hemos llegado a las tierras sombrías"
+      },
+      "bajo-la-sombra-de-la-torre": {
+        "name": "Bajo la Sombra de la Torre",
+        "description": "Las tropas enemigas se retiran hacia otro frente.",
+        "achievement": "Los enemigos se retiran"
+      },
+      "la-montana-de-fuego": {
+        "name": "La Montaña de Fuego",
+        "description": "El destino final: un volcán activo en el corazón de las tierras sombrías.",
+        "achievement": "Pocas garantías, ninguna certeza... pero hay que intentarlo"
+      },
+      "donde-dejan-el-equipaje": {
+        "name": "Donde Dejan el Equipaje",
+        "description": "Ya no hace falta cargar con nada más para el último tramo.",
+        "achievement": "Un peso que ya no hace falta cargar"
+      },
+      "cima-de-la-montana-de-fuego": {
+        "name": "La Cima de la Montaña de Fuego",
+        "description": "El final del camino.",
+        "achievement": "Al fin, se ha terminado"
+      }
+    }
+  }
+}

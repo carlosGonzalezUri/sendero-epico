@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sendero Épico — Términos y Privacidad / Terms &amp; Privacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #3f5d4e;
+    --primary-tint: #547b68;
+    --secondary: #c08a3d;
+    --secondary-tint: #cda163;
+    --bg: #f2f0e4;
+    --card: #ffffff;
+    --text: #20262b;
+    --medium: #7c8892;
+    --border: #dcdfd6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(165deg, var(--primary), #1e2f27 88%);
+    color: #fff;
+    padding: 32px 20px 26px;
+    text-align: center;
+  }
+  header .mark {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 14px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+  }
+  header h1 {
+    font-family: 'Cinzel', Georgia, serif;
+    margin: 0 0 4px;
+    font-size: 1.6rem;
+  }
+  header p {
+    margin: 0;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.92rem;
+  }
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 22px auto 0;
+  }
+  .lang-switch button {
+    font: inherit;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 28px 20px 60px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 24px 24px 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(32,38,43,0.05);
+  }
+  h2 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 1.15rem;
+    margin: 0 0 6px;
+    color: var(--primary);
+  }
+  .updated {
+    font-size: 0.78rem;
+    color: var(--medium);
+    margin: 0 0 22px;
+  }
+  p { font-size: 0.94rem; white-space: pre-line; }
+  .lang-block { display: none; }
+  .lang-block.active { display: block; }
+  footer {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--medium);
+    padding: 0 20px 40px;
+  }
+  footer a { color: var(--primary); }
+</style>
+</head>
+<body>
+<header>
+  <div class="mark">🏔️</div>
+  <h1>Sendero Épico</h1>
+  <p>Términos de uso y Política de privacidad · Terms &amp; Privacy Policy</p>
+  <div class="lang-switch">
+    <button type="button" id="btn-es" class="active" onclick="setLang('es')">Español</button>
+    <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+</header>
+
+<main>
+  <div id="lang-es" class="lang-block active">
+    <p class="updated">Última actualización: 18 de agosto de 2026</p>
+    <div class="card">
+      <h2>Términos de uso</h2>
+      <p>Sendero Épico es una aplicación de acompañamiento para tu actividad física: convierte tus pasos diarios (leídos desde Health Connect, con tu permiso) en avance a lo largo de un recorrido ilustrado con etapas e hitos ficticios. Al usar la app aceptas usarla con fines personales y no comerciales, y entiendes que las distancias, etapas y logros mostrados son parte de una experiencia de gamificación y no constituyen asesoramiento médico ni deportivo.
+
+La app puede ofrecer funciones adicionales de pago ("premium") de forma opcional. Cualquier compra dentro de la app se gestiona a través de la tienda de aplicaciones correspondiente (Google Play) y se rige por sus condiciones de facturación y reembolso.
+
+Nos reservamos el derecho de actualizar estos términos a medida que la app evolucione. Si sigues usando la app después de un cambio, se entiende que aceptas la versión actualizada.
+
+No garantizamos que la app esté libre de errores o disponible de forma ininterrumpida, y no nos hacemos responsables de decisiones de salud o entrenamiento basadas únicamente en los datos mostrados en la app.</p>
+    </div>
+    <div class="card">
+      <h2>Política de privacidad</h2>
+      <p>Sendero Épico está diseñada para funcionar con la menor cantidad de datos posible. No requiere crear una cuenta ni iniciar sesión.
+
+Tu progreso (pasos, km recorridos, racha de días activos) se guarda únicamente en tu dispositivo. La app lee tu recuento de pasos desde Health Connect solo con tu autorización explícita, y esos datos no se envían a nuestros servidores porque, sencillamente, no tenemos servidores que los reciban.
+
+Si en el futuro se añaden funciones que impliquen enviar o almacenar datos fuera de tu dispositivo (por ejemplo, para sincronizar entre dispositivos o gestionar compras premium), actualizaremos esta política para explicar exactamente qué datos se comparten y con qué finalidad, antes de activarlas.
+
+Puedes revocar en cualquier momento el permiso de Health Connect desde los ajustes de tu sistema Android, y puedes borrar todos los datos guardados desinstalando la app.
+
+Si tienes preguntas sobre esta política, puedes contactar con el desarrollador a través de la ficha de la app en Google Play.</p>
+    </div>
+  </div>
+
+  <div id="lang-en" class="lang-block">
+    <p class="updated">Last updated: August 18, 2026</p>
+    <div class="card">
+      <h2>Terms of Use</h2>
+      <p>Sendero Épico is a companion app for your physical activity: it turns your daily steps (read from Health Connect, with your permission) into progress along an illustrated journey made up of fictional stages and milestones. By using the app, you agree to use it for personal, non-commercial purposes, and you understand that the distances, stages and achievements shown are part of a gamification experience and do not constitute medical or sports advice.
+
+The app may optionally offer additional paid ("premium") features. Any in-app purchase is handled through the corresponding app store (Google Play) and is governed by its own billing and refund terms.
+
+We reserve the right to update these terms as the app evolves. Continuing to use the app after a change means you accept the updated version.
+
+We do not guarantee that the app is error-free or continuously available, and we are not responsible for health or training decisions based solely on the data shown in the app.</p>
+    </div>
+    <div class="card">
+      <h2>Privacy Policy</h2>
+      <p>Sendero Épico is designed to work with as little data as possible. It does not require creating an account or signing in.
+
+Your progress (steps, km walked, active-day streak) is stored only on your device. The app reads your step count from Health Connect only with your explicit authorization, and that data is never sent to our servers — simply because we don't have servers to receive it.
+
+If future features are added that involve sending or storing data outside your device (for example, to sync across devices or manage premium purchases), we will update this policy to explain exactly what data is shared and for what purpose, before turning them on.
+
+You can revoke Health Connect permission at any time from your Android system settings, and you can delete all stored data by uninstalling the app.
+
+If you have questions about this policy, you can contact the developer through the app's Google Play listing.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  Sendero Épico · com.carlos.senderoepico
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>

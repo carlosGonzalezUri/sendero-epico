@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Sendero Épico</string>
+    <string name="title_activity_main">Sendero Épico</string>
+    <string name="package_name">com.carlos.senderoepico</string>
+    <string name="custom_url_scheme">com.carlos.senderoepico</string>
+</resources>

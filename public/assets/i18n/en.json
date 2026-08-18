@@ -1,0 +1,233 @@
+{
+  "tabs": {
+    "journey": "Journey",
+    "stats": "Stats"
+  },
+  "header": {
+    "settings": "Settings"
+  },
+  "home": {
+    "currentStage": "Current stage",
+    "kmWalked": "km walked",
+    "completedLabel": "completed",
+    "kmTotal": "total km",
+    "remainingPrefix": "You have",
+    "remainingSuffix": "left to reach",
+    "journeyCompleted": "You've completed {{name}}!",
+    "kmLabel": "Km {{km}}",
+    "syncNeedsPermission": "We need permission to read your steps from Health Connect.",
+    "syncNeedsHealthConnect": "Install the Health Connect app to sync your steps."
+  },
+  "stats": {
+    "walkedOf": "walked of {{total}} km total",
+    "stagesShort": "{{done}} / {{total}} stages",
+    "streakDaySingular": "day streak",
+    "streakDayPlural": "day streak",
+    "bestStreak": "best streak",
+    "activeDays": "active days",
+    "kmPerActiveDay": "km / active day",
+    "nextGoal": "Next goal",
+    "kmRemaining": "{{km}} km left",
+    "recentAchievements": "Latest achievements",
+    "mostRecent": "Most recent",
+    "emptyState": "No days logged yet. Sync from the Journey screen."
+  },
+  "settings": {
+    "title": "Settings",
+    "appearance": "Appearance",
+    "darkMode": "Dark mode",
+    "darkModeHint": "Switch the theme for the whole app",
+    "language": "Language",
+    "legal": "Legal",
+    "legalButton": "Terms and conditions",
+    "version": "Version"
+  },
+  "legal": {
+    "title": "Terms and conditions",
+    "lastUpdated": "Last updated: August 18, 2026",
+    "termsHeading": "Terms of Use",
+    "termsBody": "Sendero Épico is a companion app for your physical activity: it turns your daily steps (read from Health Connect, with your permission) into progress along an illustrated journey made up of fictional stages and milestones. By using the app, you agree to use it for personal, non-commercial purposes, and you understand that the distances, stages and achievements shown are part of a gamification experience and do not constitute medical or sports advice.\n\nThe app may optionally offer additional paid (\"premium\") features. Any in-app purchase is handled through the corresponding app store (Google Play) and is governed by its own billing and refund terms.\n\nWe reserve the right to update these terms as the app evolves. Continuing to use the app after a change means you accept the updated version.\n\nWe do not guarantee that the app is error-free or continuously available, and we are not responsible for health or training decisions based solely on the data shown in the app.",
+    "privacyHeading": "Privacy Policy",
+    "privacyBody": "Sendero Épico is designed to work with as little data as possible. It does not require creating an account or signing in.\n\nYour progress (steps, km walked, active-day streak) is stored only on your device. The app reads your step count from Health Connect only with your explicit authorization, and that data is never sent to our servers — simply because we don't have servers to receive it.\n\nIf future features are added that involve sending or storing data outside your device (for example, to sync across devices or manage premium purchases), we will update this policy to explain exactly what data is shared and for what purpose, before turning them on.\n\nYou can revoke Health Connect permission at any time from your Android system settings, and you can delete all stored data by uninstalling the app.\n\nIf you have questions about this policy, you can contact the developer through the app's Google Play listing.",
+    "close": "Close"
+  },
+  "journey": {
+    "stages": {
+      "aldea-natal": {
+        "name": "The Home Village",
+        "description": "A quiet village among green hills, the starting point.",
+        "achievement": "An adventure begins"
+      },
+      "limite-conocido": {
+        "name": "The Known Edge",
+        "description": "The farthest point any villager had ever reached.",
+        "achievement": "One step beyond the known"
+      },
+      "huerto": {
+        "name": "The Orchard",
+        "description": "Farmland just outside the village, a tempting shortcut.",
+        "achievement": "Just borrowing a couple of carrots"
+      },
+      "embarcadero": {
+        "name": "The Ferry Crossing",
+        "description": "A river crossing by boat, the last easy way out before the unknown.",
+        "achievement": "Run, traveler!"
+      },
+      "el-puente": {
+        "name": "The Bridge",
+        "description": "Crossing here means truly leaving home behind.",
+        "achievement": "Leaving home behind"
+      },
+      "posada-del-poni": {
+        "name": "The Tired Pony Inn",
+        "description": "A crossroads tavern, full of rumors and curious stares.",
+        "achievement": "A borrowed name"
+      },
+      "guia-misterioso": {
+        "name": "On the Road with the Mysterious Guide",
+        "description": "A lone traveler offers to accompany the group through dangerous roads.",
+        "achievement": "Getting to know the guide"
+      },
+      "cima-ventosa": {
+        "name": "Windy Top",
+        "description": "An old, exposed hill, a bad place to camp.",
+        "achievement": "The poisoned blade"
+      },
+      "ciudad-de-los-elfos": {
+        "name": "The City of the Ancient Elves",
+        "description": "A hidden refuge in a valley, the last breath before the wild lands.",
+        "achievement": "The Fellowship of the Journey is born"
+      },
+      "cumbres-heladas-1": {
+        "name": "The Frozen Peaks",
+        "description": "An imposing mountain range that must be crossed or skirted.",
+        "achievement": "Forty days of marching ahead"
+      },
+      "paso-de-la-nieve": {
+        "name": "The Snow Pass",
+        "description": "A mountain pass that seems to resist letting them through.",
+        "achievement": "A cruel voice rides the wind"
+      },
+      "bajada-de-la-montana": {
+        "name": "The Mountain Descent",
+        "description": "The way down, every bit as hard as the climb.",
+        "achievement": "Bitter winter"
+      },
+      "entrada-minas-profundas": {
+        "name": "The Entrance to the Deep Mines",
+        "description": "An ancient door sealed with a riddle, carved into the rock.",
+        "achievement": "Only those who know the word may pass"
+      },
+      "salida-minas-profundas": {
+        "name": "The Way Out of the Deep Mines",
+        "description": "Something woke down there, and not everyone comes out the same.",
+        "achievement": "The last barrier before the way out"
+      },
+      "bosque-dorado": {
+        "name": "The Golden Forest",
+        "description": "A forest where time seems to stand still among golden leaves.",
+        "achievement": "Welcome, one who has felt the shadow"
+      },
+      "rio-de-los-elfos": {
+        "name": "The Elven River",
+        "description": "A long stretch sailing downstream.",
+        "achievement": "A long canoe ride"
+      },
+      "estatuas-de-los-reyes": {
+        "name": "The Statues of the Ancient Kings",
+        "description": "Two colossal figures carved into the rock, watching over the river passage.",
+        "achievement": "The kings of old"
+      },
+      "separacion-de-la-hermandad": {
+        "name": "Where the Fellowship Parts Ways",
+        "description": "The group can no longer stay together for the rest of the journey.",
+        "achievement": "Farewell, companion"
+      },
+      "cumbres-heladas-2": {
+        "name": "The Frozen Peaks, Once More",
+        "description": "Another mountain range, this time with no one left to guide the way.",
+        "achievement": "We're lost"
+      },
+      "descenso-de-la-montana": {
+        "name": "The Mountain Descent",
+        "description": "Something has been following close behind for a while now.",
+        "achievement": "We are not alone"
+      },
+      "camino-al-porton-sombrio": {
+        "name": "The Road to the Shadowed Gate",
+        "description": "A strange creature offers, in its own way, to act as a guide.",
+        "achievement": "Now we have a guide"
+      },
+      "paso-de-la-cienaga": {
+        "name": "The Marsh Crossing",
+        "description": "Stagnant waters where reflections float that are better left unseen.",
+        "achievement": "He's led us into a swamp"
+      },
+      "porton-sombrio": {
+        "name": "The Shadowed Gate",
+        "description": "The main entrance to enemy lands, watched day and night.",
+        "achievement": "There's another way, though no one remembers it"
+      },
+      "aliado-inesperado": {
+        "name": "An Unexpected Ally",
+        "description": "Another band of armed travelers blocks their path.",
+        "achievement": "Turns out he was his brother"
+      },
+      "cueva-de-la-cascada": {
+        "name": "The Waterfall Cave",
+        "description": "A secret hideout behind a curtain of water.",
+        "achievement": "No swimming allowed"
+      },
+      "ciudad-en-ruinas": {
+        "name": "The Ruined, Besieged City",
+        "description": "A half-abandoned city, under constant siege.",
+        "achievement": "Everyone is fighting for something"
+      },
+      "escalera-de-las-minas-verdes": {
+        "name": "The Stair of the Green Mines",
+        "description": "A steep, forgotten shortcut carved into the hillside.",
+        "achievement": "Taking the secret staircase"
+      },
+      "guarida-de-la-arana": {
+        "name": "The Spider's Lair",
+        "description": "A tunnel that smells of something far bigger than an ordinary web.",
+        "achievement": "Into the tunnel we go"
+      },
+      "pelea-con-la-arana": {
+        "name": "The Fight with the Spider",
+        "description": "The darkest moment of the journey so far.",
+        "achievement": "Don't go where I can't follow — wake up!"
+      },
+      "huida-de-los-enemigos": {
+        "name": "Fleeing the Enemy",
+        "description": "Captured and freed, now it's time to stay unseen.",
+        "achievement": "Needs another disguise to carry on"
+      },
+      "camino-a-la-torre-oscura": {
+        "name": "The Road to the Dark Tower",
+        "description": "The shadowlands, within sight of the enemy fortress.",
+        "achievement": "We've reached the shadowlands"
+      },
+      "bajo-la-sombra-de-la-torre": {
+        "name": "Under the Tower's Shadow",
+        "description": "Enemy troops withdraw toward another front.",
+        "achievement": "The enemy is retreating"
+      },
+      "la-montana-de-fuego": {
+        "name": "The Mountain of Fire",
+        "description": "The final destination: an active volcano at the heart of the shadowlands.",
+        "achievement": "Few guarantees, no certainties... but it has to be tried"
+      },
+      "donde-dejan-el-equipaje": {
+        "name": "Where They Leave the Gear Behind",
+        "description": "No need to carry anything more for the final stretch.",
+        "achievement": "A weight that no longer needs carrying"
+      },
+      "cima-de-la-montana-de-fuego": {
+        "name": "The Summit of the Mountain of Fire",
+        "description": "The end of the road.",
+        "achievement": "At last, it is done"
+      }
+    }
+  }
+}
