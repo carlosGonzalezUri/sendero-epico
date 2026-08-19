@@ -1,0 +1,74 @@
+name: Build Android APK
+
+# Compila la app automáticamente en cada push y también se puede lanzar a mano
+# desde la pestaña "Actions" de GitHub (botón "Run workflow").
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Setup Java (para Gradle/Android)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Build web (Angular/Ionic)
+        run: npx ng build --configuration production
+
+      - name: Sincronizar Capacitor con Android
+        run: npx cap sync android
+
+      - name: Dar permisos a gradlew
+        run: chmod +x android/gradlew
+
+      # Build de depuración: no necesita firma, sirve para probar en dispositivos
+      # y para verificar que el proyecto compila en cada push.
+      - name: Compilar APK debug
+        working-directory: android
+        run: ./gradlew assembleDebug
+
+      - name: Subir APK como artefacto descargable
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+
+      # --- Build de RELEASE firmado (AAB para subir a Play Store) ---
+      # Desactivado hasta que configures el keystore como secreto del repo.
+      # Instrucciones en docs/DEPLOY_CHECKLIST.md → "CI de release".
+      # - name: Compilar AAB release firmado
+      #   working-directory: android
+      #   env:
+      #     KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+      #     KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+      #     KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+      #     KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+      #   run: |
+      #     echo "$KEYSTORE_BASE64" | base64 -d > app/release.keystore
+      #     ./gradlew bundleRelease \
+      #       -Pandroid.injected.signing.store.file=release.keystore \
+      #       -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD" \
+      #       -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
+      #       -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
+      # - name: Subir AAB release
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: app-release-aab
+      #     path: android/app/build/outputs/bundle/release/app-release.aab
